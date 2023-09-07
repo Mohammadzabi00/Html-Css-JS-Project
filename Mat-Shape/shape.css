@@ -1,0 +1,135 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: gray;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    background-color: #1965ff;
+    border-radius: 100%;
+    margin: 10px auto;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.square{
+    width: 150px;
+    height : 150px;
+    background-color: cornflowerblue;
+    margin : 10px auto;
+    
+}
+
+.triangle {
+    width : 0;
+    height: 0;
+    border-left :50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+    margin: 10px auto;
+}
+
+
+.rectangular{
+    width : 300px;
+    height: 200px;
+    background-color: darkgreen;
+    margin: 10px auto;
+
+}
+
+.oval{
+    width: 200px;
+    height: 100px;
+    background-color: lightseagreen;
+    border-radius: 50%;
+    margin: 10px auto;
+
+}
+
+.daimond_square {
+    width : 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color: lightskyblue;
+    position: relative;
+    top: -50px;
+    margin:  auto;
+    margin-top: 20px;
+}
+.daimond_square::after {
+    content: "" ;
+    position: absolute;
+    left : -50px;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top-color: lightskyblue;
+    margin: auto;
+
+}
+
+
+.pentagone {
+    position: relative;
+    width : 54px;
+    box-sizing: content-box;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: blue transparent;
+    margin: auto ;
+    margin-top: 50px;
+}
+.pentagone::after{
+    content: "";
+    position: absolute;
+    width : 0;
+    height: 0;
+    top: -85px;
+    left: -18px;
+    border-width : 0 45px 36px;
+    border-style: solid;
+    border-color: transparent transparent blue;
+
+
+}
+.hexagone{
+    width : 100px;
+    height : 55px;
+    background: skyblue;
+    position:relative;
+    margin: auto;
+    margin-top: 50px;
+
+}
+.hexagone::before{
+    content : "";
+    position: absolute;
+    top: -25px;
+    width: 0;
+    left: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid skyblue;
+}
+.hexagone::after{
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left : 0;
+    width : 0;
+    height : 0;
+    border-left : 50px solid transparent;
+    border-right : 50px solid transparent;
+    border-top: 25px solid skyblue;
+
+}
+
