@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Website</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar Section-->
+    <nav>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Menu">Menu</a></li>
+        <li><a href="#Where">Where</a></li>
+      </ul>
+      <div style="clear: both"></div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header-container" id="Home">
+      <img src="coffeehouse.jpg" alt="coffee houese" />
+      <div class="title">
+        <h1>The</h1>
+        <br />
+        <h1>Cafe</h1>
+      </div>
+      <span class="left">Open from 6am to 5pm</span>
+      <span class="right">15 Adr street, 5015</span>
+    </header>
+
+    <!-- Main section -->
+    <main>
+      <!-- About section -->
+      <section id="About">
+        <h4>ABOUT THE CAFE</h4>
+        <p>
+          The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit
+          amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+
+        <p>
+          In addition to our full espresso and brew bar menu, we serve fresh
+          made-to-order breakfast and lunch sandwiches, as well as a selection
+          of sides and salads and other good stuff.
+        </p>
+
+        <div>
+          <p>
+            "Use products from nature for what it's worth - but never too early,
+            nor too late."<br />
+            Fresh is the new sweet.
+          </p>
+          <p>Chef, Coffeeist and Owner: Liam Brown</p>
+        </div>
+        <img src="coffeeshop.jpg" alt="coffeeshop" />
+        <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+        <p><strong>Address: </strong> 15 Adr street, 5015, NY</p>
+      </section>
+
+      <!-- Menu Section -->
+      <section id="Menu">
+        <h4>THE MENU</h4>
+
+        <div class="button-container">
+          <a href="#eat-container" class="eat" onclick="openMenu()">Eat</a>
+          <a href="#drink-container" class="drink" onclick="openMenu()"
+            >Drink</a
+          >
+        </div>
+
+        <div id="eat-container" class="eat-container" style="display: block">
+          <h5>Bread Basket</h5>
+          <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+          <br />
+          <h5>Honey Almond Granola with Fruits</h5>
+          <p>
+            Natural cereal of honey toasted oats, raisins, almonds and dates
+            7.00
+          </p>
+          <br />
+          <h5>Belgian Waffle</h5>
+          <p>Vanilla flavored batter with malted flour 7.50</p>
+          <br />
+          <h5>Scrambled eggs</h5>
+          <p>
+            Scrambled eggs, roasted red pepper and garlic, with green onions
+            7.50
+          </p>
+          <br />
+          <h5>Blueberry Pancakes</h5>
+          <p>With syrup, butter and lots of berries 8.50</p>
+        </div>
+
+        <div id="drink-container" class="drink-container" style="display: none">
+          <h5>Coffee</h5>
+          <p>Regular coffee 2.50</p>
+          <br />
+          <h5>Chocolato</h5>
+          <p>Chocolate espresso with milk 4.50</p>
+          <br />
+          <h5>Corretto</h5>
+          <p>Whiskey and coffee 5.00</p>
+          <br />
+          <h5>Iced tea</h5>
+          <p>Hot tea, except not hot 3.00</p>
+          <br />
+          <h5>Soda</h5>
+          <p>Coke, Sprite, Fanta, etc. 2.50</p>
+        </div>
+        <img src="coffeehouse2.jpg" alt="" />
+      </section>
+      <!-- where section -->
+      <section id="Where">
+        <h4>WHERE TO FIND US</h4>
+        <p>Find us at some address at some place.</p>
+        <img src="map.jpg" alt="" />
+
+        <p>
+          <strong>FYl!</strong> We offer full-service catering for any event,
+          large or small. We understand your needs and we will cater the food to
+          satisfy the biggerst criteria of them all, both look and taste.
+        </p>
+
+        <p>
+          <b>Reserve</b> a table, ask for today's special or just send us a
+          message:
+        </p>
+
+        <form action="" method="get">
+          <input type="text" name="name" id="name" placeholder="Name" />
+          <br /><br />
+          <input
+            type="number"
+            name="number"
+            id="number"
+            placeholder="How Many People"
+          />
+          <br /><br />
+          <input
+            type="text"
+            name="message"
+            id="message"
+            placeholder="Message / Requirments"
+          />
+          <br /><br />
+          <input type="submit" value="SEND MESSAGE" class="submit" />
+        </form>
+      </section>
+    </main>
+
+    <!-- footer  -->
+    <footer>
+      <p>&copy; copyright Powered By <span>Mohammadzabi "Haidari"</span></p>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
