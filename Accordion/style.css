@@ -1,0 +1,68 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+body {
+    padding: 20px;
+    
+}
+
+.accordion {
+    background-color: #999;
+    color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    
+}   
+
+.active , .accordion:hover {
+    background-color: #ccc;
+    color: black;
+}
+.accordion::after {
+    content: '\003009';
+    transform: rotate(90deg);
+    color: #777;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+    transition: all 0.5s;
+    margin-left: 5px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.active::after {
+    content: '\003009';
+    transform: rotate(270deg);
+}
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: rgba(223, 154, 6, 0.63);
+    transition: max-height 0.5s all ;
+    -webkit-transition: max-height 0.5s all ;
+    -moz-transition: max-height 0.5s all ;
+    -ms-transition: max-height 0.5s all ;
+    -o-transition: max-height 0.5s all ;
+}
+.panel p {
+    text-align: justify;
+    font-size: 18px;
+    text-transform: capitalize;
+
+}
