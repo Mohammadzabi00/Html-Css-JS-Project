@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sidebar {
+    width: 0;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.sidebar h2 {
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+.btn{
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px;
+    width : 20%;
+    background-color: transparent;
+    border: none;
+
+}
+.btn:hover {
+    background-color: rgba(236, 137, 7, 0.87);
+}
+.close::after {
+    content: '\002716 Close';
+}
+.open::after{
+    content: '\002630 open';
+}
+.show{
+    width : 300px;
+}
