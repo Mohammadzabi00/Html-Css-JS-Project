@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.container {
+  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.container p#Number {
+  font-size: 100px;
+  font-weight: 700;
+  color: white;
+}
+button {
+  padding: 5px 40px;
+  font-size: 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+.container #decrease {
+  border: 1px solid rgba(255, 0, 0, 0.616);
+}
+.container #decrease:hover {
+  border: 1px solid red;
+}
+.container #increase {
+  border: 1px solid rgba(4, 153, 4, 0.644);
+}
+.container #increase:hover {
+  border: 1px solid green;
+}
+.container #reset {
+  border: 1px solid gray;
+}
+.container #reset:hover {
+  border: 1px solid white;
+}
