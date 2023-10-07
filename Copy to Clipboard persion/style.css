@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection {
+    background-color: #03a9f4;
+}
+
+body{
+    background-color: #03a9f4;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    height: 100vh;
+
+}
+.container {
+    width: 400px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.container :where(textarea , button){
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 5px 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.container textarea{
+    border: 1px solid gray;
+    padding: 30px 10px;
+}
+.container button {
+    background-color: #b3e5fc;
+    transition: all 1s ;
+    -webkit-transition: all 1s ;
+    -moz-transition: all 1s ;
+    -ms-transition: all 1s ;
+    -o-transition: all 1s ;
+}
